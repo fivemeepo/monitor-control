@@ -6,11 +6,7 @@ This repository exists solely to package and share that one skill.
 
 ## What's here
 
-```
-.claude/skills/display-mode/
-├── SKILL.md     # the skill itself
-└── README.md    # detailed setup & usage
-```
+The skill lives at `.claude/skills/display-mode/SKILL.md`
 
 ## Use it
 
@@ -28,4 +24,4 @@ This repository exists solely to package and share that one skill.
 
 ## Per-machine setup
 
-Each monitor has a unique DDC UUID, so you set yours once. Run `m1ddc display list`, pick your external display, and put its UUID into `.claude/skills/display-mode/SKILL.md`. Full details are in that skill's own README.
+Each monitor has a unique DDC UUID, so set yours once: run `m1ddc display list`, pick your external display, and put its UUID into the daytime/night commands in `.claude/skills/display-mode/SKILL.md`
