@@ -30,15 +30,15 @@ Run the matching command exactly. The display UUID is pinned so the command targ
 
 **Daytime mode:**
 ```bash
-m1ddc display "EEE5CFDD-8922-4855-99E9-FA9E0BC9CB84" set luminance 95
+m1ddc display "8C24C5CE-90F0-4B41-B53B-1E6EB1E7F09F" set luminance 95
 ```
 
 **Night mode:**
 ```bash
-m1ddc display "EEE5CFDD-8922-4855-99E9-FA9E0BC9CB84" set luminance 50
+m1ddc display "8C24C5CE-90F0-4B41-B53B-1E6EB1E7F09F" set luminance 50
 ```
 
-> The UUID above is the original author's Dell S2722QC. Replace it with your own — see **First-time setup** above.
+> The UUID above is this machine's Dell S2722QC. If you move to a different Mac/monitor, replace it — see **First-time setup** above.
 
 After running, briefly confirm to the user (e.g. "External display set to 95 — daytime mode."). No need to read back the value; the monitor sometimes returns a stale luminance immediately after a write, which causes confusing output.
 
