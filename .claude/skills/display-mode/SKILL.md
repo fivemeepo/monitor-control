@@ -10,7 +10,7 @@ Sets an external monitor to a preset brightness via DDC/CI (using `m1ddc`). Two 
 | Mode | Brightness |
 |------|-----------|
 | Daytime | 95 |
-| Night | 50 |
+| Night | 35 |
 
 The MacBook built-in display is **not** touched — it auto-adjusts via True Tone / ambient light sensing, and the Apple Silicon brightness API isn't reliably writable from the CLI anyway.
 
@@ -22,7 +22,7 @@ DDC targets a monitor by a **display UUID that is unique to each Mac + monitor p
 m1ddc display list
 ```
 
-Pick the entry that is **not** the built-in panel (the built-in usually shows as `Color LCD` / `Built-in`), copy its UUID, and replace the UUID in the two commands below. Tweak the `95` / `50` brightness values to taste.
+Pick the entry that is **not** the built-in panel (the built-in usually shows as `Color LCD` / `Built-in`), copy its UUID, and replace the UUID in the two commands below. Tweak the `95` / `35` brightness values to taste.
 
 ## How to apply
 
@@ -35,7 +35,7 @@ m1ddc display "8C24C5CE-90F0-4B41-B53B-1E6EB1E7F09F" set luminance 95
 
 **Night mode:**
 ```bash
-m1ddc display "8C24C5CE-90F0-4B41-B53B-1E6EB1E7F09F" set luminance 50
+m1ddc display "8C24C5CE-90F0-4B41-B53B-1E6EB1E7F09F" set luminance 35
 ```
 
 > The UUID above is this machine's Dell S2722QC. If you move to a different Mac/monitor, replace it — see **First-time setup** above.
